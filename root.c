@@ -4,8 +4,9 @@
 int main(int argc, char *argv[]) {
 if(geteuid() != 0)
 {
- printf("Run as root");
- exit 1;
+ printf("Run this program as root\n");
+ return 1;
 }
-exit 0;
+ printf("Runnings as root\n");
+return 0;
 }
